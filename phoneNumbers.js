@@ -40,7 +40,7 @@ function formatPhoneNumbers(string) {
 }
 
 // Test different inputs.
-let phoneNumber = '555-319-0101'
+let phoneNumber = '555-319-0101';
 let text = `Hi! You can call me at ${phoneNumber}.`;
 let lotsOfNumbers = 'My phone number is 555-123-4567. Your phone number is 231-180-0101, right? But who has 501-456-1234 for a phone number?';
 
@@ -49,7 +49,7 @@ console.log(text);
 console.log();
 
 if (containsPhoneNumber(text)) {
-  console.log('Found a phone number!')
+  console.log('Found a phone number!');
 } else {
   console.log('Ut oh, no phone number found.');
 }
@@ -57,14 +57,13 @@ console.log();
 console.log('-'.repeat(10));
 console.log();
 
-
 console.log('Finding all phone numbers in the following text:');
 console.log(lotsOfNumbers);
 
 let phoneNumbers = findAllPhoneNumbers(lotsOfNumbers);
 
 console.log();
-console.log(`We found ${phoneNumbers.length} phone numbers.`)
+console.log(`We found ${phoneNumbers.length} phone numbers.`);
 for (let number of phoneNumbers) {
   console.log(`* ${number}`);
 }
@@ -72,12 +71,12 @@ console.log();
 console.log('-'.repeat(10));
 console.log();
 
-console.log('Formatting phone numbers:')
+console.log('Formatting phone numbers:');
 let phoneNumbersToFormat = [
   '123-456-7891',
   '1234564321',
   '555.666.7777',
-  '123-456-789 and 5678345123 and 555.123.4321'
+  '123-456-789 and 5678345123 and 555.123.4321',
 ];
 
 for (let number of phoneNumbersToFormat) {
