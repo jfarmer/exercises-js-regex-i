@@ -71,6 +71,18 @@ console.log();
 console.log('-'.repeat(10));
 console.log();
 
+console.log('Hiding phone numbers:');
+let messageWithHiddenNumbers = hidePhoneNumber(lotsOfNumbers);
+
+console.log('Message (no hidden numbers):');
+console.log('  ' + lotsOfNumbers);
+console.log();
+console.log('Message (numbers hidden):');
+console.log('  ' + messageWithHiddenNumbers);
+console.log();
+console.log('-'.repeat(10));
+console.log();
+
 console.log('Formatting phone numbers:');
 let phoneNumbersToFormat = [
   '123-456-7891',
